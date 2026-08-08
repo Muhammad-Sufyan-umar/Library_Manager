@@ -67,7 +67,7 @@ class Library:
 
     #Return book--------_---------_-------->
 	def return_book(self):
-		book_id=input("Enter book id to return")
+		book_id=input("Enter book id to return: ")
 		for book in self.books:
 			if book.book_id ==book_id:
 				if not book.is_issued:
@@ -79,30 +79,36 @@ class Library:
 			else:
 				print("book not found")
 				
-library = Library()
 
-while True:
-    print("\n===== Library Management System =====")
-    print("1. Add Book")
-    print("2. View Books")
-    print("3. Issue Book")
-    print("4. Return Book")
-    print("5. Exit")
 
-    choice = input("Enter your choice: ")
+def Main() -> None:
+    library = Library()
 
-    if choice == "1":
-        library.add_book()
+    while True:
+        print("\n===== Library Management System =====")
+        print("1. Add Book")
+        print("2. View Books")
+        print("3. Issue Book")
+        print("4. Return Book")
+        print("5. Exit")
 
-    elif choice == "2":
-        library.view_books()
+        choice = input("Enter your choice: ")
 
-    elif choice == "3":
-        library.issue_book()
+        if choice == "1":
+            library.add_book()
 
-    elif choice == "4":
-        library.return_book()
+        elif choice == "2":
+            library.view_books()
 
-    elif choice == "5":
-        print("Thank you for using Library Management System!")
-        break
+        elif choice == "3":
+            library.issue_book()
+
+        elif choice == "4":
+            library.return_book()
+
+        elif choice == "5":
+            print("Thank you for using Library Management System!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+Main()
