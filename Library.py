@@ -2,10 +2,6 @@
 
 from fileinput import filename
 
-
-from fileinput import filename
-
-
 class Book:
 	
 	def __init__(self,book_id,title,author):
@@ -62,11 +58,11 @@ class Library:
 		for book in self.books:
 			if book.book_id==book_id:
 				if book.is_issued=="Issued":
-					print("book is already issued")
+					print("Book is already issued")
 					return
 				else:
 					book.is_issued="Issued"
-					print("book sucussfully issued")
+					print("Book successfully issued")
 					return 
 			else:
 				print("Book not found \n")
@@ -83,10 +79,10 @@ class Library:
 					return
 				else:
 					book.is_issued = "Available"
-					print("book returned")
+					print("Book returned")
 					return
 			else:
-				print("book not found")
+				print("Book not found")
 
     #Save books to file--------_---------_-------->			
 	def save_books_to_file(self, filename):
