@@ -1,101 +1,68 @@
-# 📚 Library Management System
+# Library Management System
 
-A simple **Library Management System** built in Python using **Object-Oriented Programming (OOP)** concepts.
+A simple Library Management System built in **Python using Object Oriented Programming(OOP).**
 
-This project allows users to manage books in a library through a simple command-line menu.
+This project allows user to manage books through a simple command-line menu.
 
-## 🚀 Features
+## Features
 
-* ➕ Add a new book
-* 📖 View all available books
-* 📤 Issue a book
-* 📥 Return a book
-* 🔍 Check book availability
-* 🆔 Prevent duplicate book IDs
-* ❌ Exit the application
+* Add Book
+* Display Books
+* Issue Book
+* Return Book
+* Check Book Availability
+* Prevent Duplicate Book IDs
 
-## 🛠️ Concepts Used
+## Technologies Used
 
-This project demonstrates the following Python concepts:
-
-* Classes and Objects
-* Constructors (`__init__`)
-* Instance Attributes
-* Methods
-* Encapsulation
-* Conditional Statements
-* Loops
+* Python 3
+* Object Oriented Programming
+* Classes & Objects
 * Lists
+* Loops
+* Conditional Statements
 * User Input
-* String Formatting
-* Basic OOP Design
 
-## 📂 Project Structure
+## Classes Used
 
-```text
-Library-Management-System/
-│
-└── library.py
-```
+### Book
 
-## 📋 Menu
-
-```text
-===== Library Management System =====
-1. Add Book
-2. View Books
-3. Issue Book
-4. Return Book
-5. Exit
-```
-
-## 💡 How It Works
-
-Each book is represented using the `Book` class.
-
-A book contains:
+Stores book information such as:
 
 * Book ID
 * Book Title
 * Author
 * Issue Status
 
-The `Library` class manages all books and provides methods to add, view, issue, and return books.
+### Library
 
-## 📝 Example
+Manages all books and provides methods to:
+
+* Add Book
+* Display Books
+* Issue Book
+* Return Book
+* Check Book Availability
+
+# Purpose of Project
+
+This project was created to practice **Python OOP concepts** and understand how multiple classes can work together in a simple real-world application.
+
+Relationship between:
 
 ```text
-===== Library Management System =====
-1. Add Book
-2. View Books
-3. Issue Book
-4. Return Book
-5. Exit
-
-Enter your choice: 1
-
-Enter book id: 101
-Enter book title: Python Basics
-Enter author name: John Smith
-
-Book added successfully.
+Library
+|-> Books
 ```
 
-## 🔮 Future Improvements
+## Future Improvements
 
-Possible improvements for this project:
+* Add Data Storage using Files
+* Add Search Book
+* Add Delete Book
+* Add Update Book
+* Add Member Management
 
-* Save books permanently in a file
-* Add a search-book feature
-* Delete books
-* Update book information
-* Add member management
-* Add issue/return dates
-* Store data using JSON or a database
-
-## 👨‍💻 Author
+# Author
 
 **Muhammad Sufyan Umar**
-
-A Python project created for practicing **Object-Oriented Programming and CRUD-style operations**.
-
